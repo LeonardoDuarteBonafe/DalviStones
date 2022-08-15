@@ -8,166 +8,155 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="main.js"></script>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-        <title>Carousel Slider</title>
+        <title>Dalvi Stones</title>
     </head>
     <body>
 
-        <header class="header-product-page">
-            <div class="row">
-                <div class="col-2">
-                    <a href=""><img src="Imagens/menu-bar-logo.png"></a>
 
-                    <!--<ul>
-<a href="https://google.com.br"><li>CLÁSSICOS</li></a>
-<a href="https://google.com.br"><li>EXÓTICOS</li></a>
-<a href="https://google.com.br"><li>SUPER EXÓTICOS</li></a>
-</ul>-->
+        <div class="row product-page">
+            <div class="col-12 col-md-4 col-lg-3 page-menu-bar">
+                <div class="logo">
+                    <a href="index.html"><img src="Imagens/menu-bar-logo.png"></a>
                 </div>
-            </div>
-            <span>
-                <div class="row">
-                    <div class="col-2">
-                        <button class="btn" data-toggle="collapse" data-target="#collapseClassics" aria-expanded="true" aria-controls="collapseClassics">
-                            CLASSICS
-                        </button>
-
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                CLASSICS
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li class="productbutton-classic" id="almond">Almond</li>
+                                    <li class="productbutton-classic" id="argento">Argento</li>
+                                    <li class="productbutton-classic" id="blue toulon">Blue Toulon</li>
+                                    <li class="productbutton-classic" id="bonanza">Bonanza</li>
+                                    <li class="productbutton-classic" id="dallas">Dallas</li>
+                                    <li class="productbutton-classic" id="dalmata">Dálmata</li>
+                                    <li class="productbutton-classic" id="itaunas">Itaúnas</li>
+                                    <li class="productbutton-classic" id="moon light">Moon Light</li>
+                                    <li class="productbutton-classic" id="napoli">Napoli</li>
+                                    <li class="productbutton-classic" id="ornamental">Ornamental</li>
+                                    <li class="productbutton-classic" id="santa cecilia">Santa Cecilia</li>
+                                    <li class="productbutton-classic" id="sienna">Sienna</li>
+                                    <li class="productbutton-classic" id="ubatuba">Ubatuba</li>
+                                    <li class="productbutton-classic" id="white g">White G</li>
+                                    <li class="productbutton-classic" id="white ivory">White Ivory</li>
+                                    <li class="productbutton-classic" id="yellow icarai">Yellow Icaraí</li>                                
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <div class="collapse" id="collapseClassics">
-                            <ul>
-                                <li>Bonanza</li>
-                                <li>Argento</li>
-                                <li>Moon Light</li>
-                                <li>Almond</li>
-                                <li>Bonanza</li>
-                                <li>White G</li>
-                                <li>White Ivory</li>
-                                <li>Ubatuba</li>
-                                <li>Ornamental</li>
-                                <li>Santa Cecilia</li>
-                                <li>Napoli</li>
-                                <li>Blue Toulon</li>
-                                <li>Dálmata</li>
-                                <li>Dallas</li>
-                                <li>Itaúnas</li>
-                                <li>Sienna</li>
-                                <li>Yellow Icaraí</li>
-                            </ul>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                EXOTICS
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li class="productbutton-exotic" id="blizzard">Blizzard</li>
+                                    <li class="productbutton-exotic" id="bono">Bono</li>
+                                    <li class="productbutton-exotic" id="logan">Logan</li>
+                                    <li class="productbutton-exotic" id="naica">Naica</li>
+                                    <li class="productbutton-exotic" id="pitaya">Pitaya</li>
+                                    <li class="productbutton-exotic" id="top star">Top Star</li>
+                                    <li class="productbutton-exotic" id="vanilla forest">Vanilla Forest</li>
+                                    <li class="productbutton-exotic" id="white ice">White Ice</li>
+                                    <li class="productbutton-exotic" id="white napoli">White Napoli</li>
+                                    <li class="productbutton-exotic" id="white piracema">White Piracema</li>              
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                SUPER EXOTIC
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li class="productbutton-superexotic" id="antartic">Antartic</li>
+                                    <li class="productbutton-superexotic" id="calacata luce">Calacata Luce</li>
+                                    <li class="productbutton-superexotic" id="crystal">Crystal</li>
+                                    <li class="productbutton-superexotic" id="crystallum">Crystallum</li>
+                                    <li class="productbutton-superexotic" id="taj mahal">Taj Mahal</li>
+                                    <li class="productbutton-superexotic" id="titanium">Titanium</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </span>
-            <span>
-                <div class="row">
-                    <div class="col-2">
-                        <button class="btn" data-toggle="collapse" data-target="#collapseExotics" aria-expanded="false" aria-controls="collapseExotics">
-                            EXOTICS
-                        </button>
+
+            </div>
+            <div class="col-12 col-md-8 col-lg-9">
+                <div class="row page-product d-flex justify-content-center">
+                    <div class="col-10 ">
+                        <img src="" class="productpage-banner">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <div class="collapse" id="collapseExotics">
-                            <ul>
-                                <li>Top Star</li>
-                                <li>Blizzard</li>
-                                <li>Naica</li>
-                                <li>Bono</li>
-                                <li>White Piracema</li>
-                                <li>Pitaya</li>
-                                <li>Vanilla Forest</li>
-                                <li>Logan</li>
-                                <li>White Ice</li>
-                            </ul>
+                    <div class="row image-changer d-flex justify-content-center">
+                        <div class="col-2 productpage-image" id="productpage-image1">
+                            <img src="" >
+                        </div>
+                        <div class="col-2 productpage-image" id="productpage-image2">
+                            <img src="" >
+                        </div>
+                        <div class="col-2 productpage-image" id="productpage-image3">
+                            <img src="">
+                        </div>
+                        <div class="col-2 productpage-image" id="productpage-image4">
+                            <img src="">
+                        </div>
+                        <div class="col-2 productpage-image" id="productpage-image5">
+                            <img src="">
                         </div>
                     </div>
-                </div>
-            </span>
-            <span>
-                <div class="row">
-                    <div class="col-2">
-                        <button class="btn" data-toggle="collapse" data-target="#collapseSuperExotics" aria-expanded="false" aria-controls="collapseSuperExotics">
-                            SUPER EXOTICS
-                        </button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <div class="collapse" id="collapseSuperExotics">
-                            <ul>
-                                <li>Antartic</li>
-                                <li>Taj Mahal</li>
-                                <li>Crystallum</li>
-                                <li>Calacata Luce</li>
-                                <li>Titanium</li>
-                                <li>Crystal</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </span>
-
-        </header>
-
-        <div class="row page-product">
-            <div class="col-10">
-                <img src="Imagens/banner-topo4.png">
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <img src="Imagens/amendoa1.png">
-                </div>
-                <div class="col-2">
-                    <img src="Imagens/amendoa2.png">
-                </div>
-                <div class="col-2">
-                    <img src="Imagens/amendoa3.png">
-                </div>
-                <div class="col-2">
-                    <img src="Imagens/slide1.jpg">
-                </div>
-                <div class="col-2">
-                    <img src="Imagens/slide3.jpg">
-                </div>
-            </div>
 
 
-            <!--<div class="list-image">
+                    <!--<div class="list-image">
 <img src="Imagens/amendoa1.png">
 <img src="Imagens/amendoa2.png">
 <img src="Imagens/amendoa3.png">
 <img src="Imagens/slide1.jpg">
 <img src="Imagens/slide3.jpg">
 </div>-->
+                </div>
+            </div>
         </div>
-
         <footer>
             <div class="footer-top">
                 <div class="footer-logo">
-                    <img src="Imagens/footer-logo.png">
+                    <a href="#"><img src="Imagens/footer-logo.png"></a>
                 </div>
                 <div class="footer-info">
                     <div>
-                        <a href="#">EMPRESA</a>
-                        <a href="#">NEW</a>
-                        <a href="#">PEDREIRA</a>
-                        <a href="#">MATERIAIS</a>
-                        <a href="#">ORIENTE MÉDIO</a>
-                        <a href="#">ORÇAMENTO/SOLICITAÇÃO</a>
-                        <a href="#">LOCALIZAÇÃO</a>
+                        <a href="#">COMPANY</a>
+                        <a href="#accordion">NEWS</a>
+                        <a href="#myCarousel2">QUARRY</a>
+                        <a href="#produtos">MATERIALS</a>
+                        <a href="#myCarousel3">MIDDLE EAST</a>
+                        <a href="#">BUDGET/REQUEST</a>
+                        <a href="localizacao.html">LOCATION</a>
                     </div>
                     <div>
-                        <p>Rod. ES 080 - S/N - KM 227<br>
-                            Córrego do Café - Águia Branca - ES</p>
+                        <a><p>Rod. ES 080 - S/N - KM 227<br>
+                            Córrego do Café - Águia Branca - ES</p></a>
                         <div>
                             <p>+55 28 3027.2727 (BR)</p>
                             <p>+971 00 9999.9999 (AU)</p>
@@ -178,10 +167,10 @@
             </div>
             <div class="footer-bot">
                 <div class="footer-bot-images">
-                    <img src="Imagens/facebook-icon.png">
-                    <img src="Imagens/instagram-icon.png">
-                    <img src="Imagens/whatsapp-icon.png">
-                    <img src="Imagens/linkedin-icon.png">
+                    <a href="https://www.facebook.com/"  target="_blank"><img src="Imagens/facebook-icon.png"></a>
+                    <a href="https://www.instagram.com/"  target="_blank"><img src="Imagens/instagram-icon.png"></a>
+                    <a href="https://web.whatsapp.com/"  target="_blank"><img src="Imagens/whatsapp-icon.png"></a>
+                    <a href="https://br.linkedin.com/"  target="_blank"><img src="Imagens/linkedin-icon.png"></a>
                 </div>
                 <div>
                     <p>Copyright 2021 - All Rights Reserved - Dalvi Stone - Prove Comunicação</p>
@@ -189,6 +178,6 @@
             </div>
         </footer>
 
-        <script src="main.js"></script>
+
     </body>
 </html>

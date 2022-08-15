@@ -15,7 +15,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <title>Carousel Slider</title>
+        <title>Dalvi Stones</title>
     </head>
     <body>
 
@@ -29,17 +29,17 @@
 <p>ORIENTE MÉDIO</p>
 <p>ORÇAMENTO/<br>SOLICITAÇÃO</p>
 <p>LOCALIZAÇÃO</p>-->
-                <div class="information-bar">
+                <div class="information-bar" id="navbarSupportedContent">
                     <ul>
-                        <li><a href="#">EMPRESA</a></li>
+                        <li><a href="#">COMPANY</a></li>
                         <li><a href="#accordion">NEWS</a></li>
-                        <li><a href="#myCarousel2">PEDREIRA</a></li>
-                        <li><a href="#produtos">MATERIAIS</a></li>
-                        <li><a href="#myCarousel3">ORIENTE MÉDIO</a></li>
-                        <li><a href="#">ORÇAMENTO/<br>SOLICITAÇÃO</a></li>
-                        <li><a href="#">LOCALIZAÇÃO</a></li>
+                        <li><a href="#myCarousel2">QUARRY</a></li>
+                        <li><a href="#produtos">MATERIALS</a></li>
+                        <li><a href="#myCarousel3">MIDDLE EAST</a></li>
+                        <li><a href="#">BUDGET/<br>REQUEST</a></li>
+                        <li><a href="localizacao.html">LOCATION</a></li>
                     </ul>
-                    <p><a><img src="Imagens/menu-bar-paises.png" class="paises"></a></p>
+                    <p><a><img src="Imagens/menu-bar-paises-br.png" class="paises" id="pt"><img src="Imagens/menu-bar-paises-as.png" class="paises" id="eng"></a></p>
                     <p class="social">
                         <a href="https://www.facebook.com/" target="_blank"><img src="Imagens/menu-bar-facebook.png"></a>
                         <a href="https://www.instagram.com/" target="_blank"><img src="Imagens/menu-bar-instagram.png"></a>
@@ -47,6 +47,9 @@
                         <a href="https://br.linkedin.com/" target="_blank"><img src="Imagens/menu-bar-linkedin.png"></a>
                     </p>
                 </div>
+                <!--<div>
+<a class="collapseMenu"><img src="Imagens/menu-bar-expand.png"></a>
+</div>-->
             </div>
         </div>
 
@@ -59,28 +62,36 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto text-right">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">EMPRESA <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">COMPANY <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#accordion">NEWS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#myCarousel2">PEDREIRA</a>
+                        <a class="nav-link" href="#myCarousel2">QUARY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#produtos">MATERIAIS</a>
+                        <a class="nav-link" href="#produtos">MATERIALS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#myCarousel3">ORIENTE MÉDIO</a>
+                        <a class="nav-link" href="#myCarousel3">MIDDLE EAST</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ORÇAMENTO/SOLICITAÇÃO</a>
+                        <a class="nav-link" href="#">BUDGET/REQUEST</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">LOCALIZAÇÃO</a>
+                        <a class="nav-link" href="localizacao.html">LOCATION</a>
                     </li>
-                    
                 </ul>
+                <div class="navbar-images text-right">
+                    <p><a><img src="Imagens/menu-bar-paises-br.png" class="paises" id="pt"><img src="Imagens/menu-bar-paises-as.png" class="paises" id="eng"></a></p>
+                    <p class="social">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="Imagens/menu-bar-facebook.png"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="Imagens/menu-bar-instagram.png"></a>
+                        <a href="https://web.whatsapp.com/" target="_blank"><img src="Imagens/menu-bar-whatsapp.png"></a>
+                        <a href="https://br.linkedin.com/" target="_blank"><img src="Imagens/menu-bar-linkedin.png"></a>
+                    </p>
+                </div>
             </div>
         </nav>
 
@@ -153,7 +164,7 @@ Sign up today
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-image: url(Imagens/banner-amendoa.png);">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-image: url(Imagens/banner-amendoa.png);" id="buttonCollapseOne">
                             <div>
                                 <h3>ALMOND</h3>
                                 <p>One of the main materials of our line of classics is back in production.</p>
@@ -193,7 +204,7 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-image: url(Imagens/banner-naica.png);">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-image: url(Imagens/banner-naica.png);" id="buttonCollapseTwo">
                             <div>
                                 <h3>ARGENTO</h3>
                                 <p>Another great project finished and delivered with our bestseller.</p>
@@ -231,7 +242,7 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-image: url(Imagens/banner-blizzard.png);">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-image: url(Imagens/banner-blizzard.png);" id="buttonCollapseThree">
                             <div>
                                 <h3>GIALLO BONANZA</h3>
                                 <p>Excellent option for indoor and outdoor areas.</p>
@@ -398,9 +409,9 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
 
 
         <div class="banner-infos" id="produtos">
-            <a href="produtos.html"><img src="Imagens/banner-classico.png"></a>
-            <a href="produtos.html"><img src="Imagens/banner-exoticos.png"></a>
-            <a href="produtos.html"><img src="Imagens/banner-superexoticos.png"></a>
+            <a class="product-banner" id="classic"><img src="Imagens/banner-classico.png"></a>
+            <a class="product-banner" id="exotic"><img src="Imagens/banner-exoticos.png"></a>
+            <a class="product-banner" id="superexotic"><img src="Imagens/banner-superexoticos.png"></a>
         </div>
 
         <div id="myCarousel3" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
@@ -484,17 +495,17 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
                 </div>
                 <div class="footer-info">
                     <div>
-                        <a href="#">EMPRESA</a>
-                        <a href="#accordion">NEW</a>
-                        <a href="#myCarousel2">PEDREIRA</a>
-                        <a href="#produtos">MATERIAIS</a>
-                        <a href="#myCarousel3">ORIENTE MÉDIO</a>
-                        <a href="#">ORÇAMENTO/SOLICITAÇÃO</a>
-                        <a href="#">LOCALIZAÇÃO</a>
+                        <a href="#">COMPANY</a>
+                        <a href="#accordion">NEWS</a>
+                        <a href="#myCarousel2">QUARRY</a>
+                        <a href="#produtos">MATERIALS</a>
+                        <a href="#myCarousel3">MIDDLE EAST</a>
+                        <a href="#">BUDGET/REQUEST</a>
+                        <a href="localizacao.html">LOCATION</a>
                     </div>
                     <div>
-                        <p>Rod. ES 080 - S/N - KM 227<br>
-                            Córrego do Café - Águia Branca - ES</p>
+                        <a><p>Rod. ES 080 - S/N - KM 227<br>
+                            Córrego do Café - Águia Branca - ES</p></a>
                         <div>
                             <p>+55 28 3027.2727 (BR)</p>
                             <p>+971 00 9999.9999 (AU)</p>
